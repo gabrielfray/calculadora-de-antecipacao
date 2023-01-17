@@ -17,16 +17,7 @@ const GlobalStyle = createGlobalStyle`
         --color-sucess:#3FE864;
         --color-negative:#E83F5B;
     }
-    .App{
-      display: flex;
-      height: 100vh;
-      width: 100vw;
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
-    }
+   
   * {
     margin: 0;
     padding: 0;

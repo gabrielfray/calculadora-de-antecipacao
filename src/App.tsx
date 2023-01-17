@@ -1,15 +1,23 @@
-import { useState } from "react";
-import Home from "./pages/Home";
 import Routes from "./routes";
+import { ToastContainer } from "react-toastify";
+import CalculatorProvider from "./context/CalculatorContext";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <div className="App">
-      <Routes />
+      <CalculatorProvider>
+        <Routes />
+        <ToastContainer
+          position={"top-right"}
+          autoClose={1000}
+          hideProgressBar={false}
+          closeOnClick={true}
+          pauseOnHover={true}
+          draggable={true}
+        />
+      </CalculatorProvider>
     </div>
   );
-}
+};
 
 export default App;

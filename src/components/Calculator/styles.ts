@@ -70,6 +70,19 @@ border-radius: .3125rem;
             ::placeholder{
                 color: #CECECE;
             }
+            ::-webkit-inner-spin-button { 
+            -webkit-appearance: none;
+    
+            }
+           
         }
 }
 `
+
+export const ErrorMessage = styled.div`
+  color: rgba(218, 27, 27, 0.873);
+  font-size: 1rem;
+  display: flex;
+  align-self: flex-start;
+  padding: 7px 0 0 1.5rem;
+`;

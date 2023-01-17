@@ -1,10 +1,13 @@
+import { ToastContainer } from "react-toastify";
 import Calculator from "../../components/Calculator";
+import { HomeContent } from "./styles";
 
 const Home = () => {
   return (
-    <div>
+    <HomeContent>
       <Calculator />
-    </div>
+      <ToastContainer />
+    </HomeContent>
   );
 };
 
