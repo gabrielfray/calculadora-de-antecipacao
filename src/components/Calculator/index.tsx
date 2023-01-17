@@ -3,7 +3,7 @@ import Anticipation from "../Anticipation";
 import { ICalculatorData } from "../../interfaces";
 import { formSimulateSchema } from "../../validators";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { CalculatorContent, ErrorMessage } from "./styles";
+import { CalculatorContent, ErrorMessage, Input } from "./styles";
 import { useContext } from "react";
 import { CalculatorContext } from "../../context/CalculatorContext";
 
@@ -28,29 +28,32 @@ const Calculator = () => {
           onChange={handleSubmit(onSubmitSimulate)}
         >
           <div>
-            <label>Informe o valor da venda *</label>
-            <input
+            <label htmlFor="amount">Informe o valor da venda *</label>
+            <Input
+              id="amount"
               type="number"
               placeholder="Valor da venda"
-              {...register("amount")}
+              {...register("amount", { valueAsNumber: true })}
             />
             <ErrorMessage>{errors.amount?.message}</ErrorMessage>
           </div>
           <div>
-            <label>Em quantas parcelas *</label>
-            <input
+            <label htmlFor="installments">Em quantas parcelas *</label>
+            <Input
+              id="installments"
               type="number"
               placeholder="Quantas parcelas"
-              {...register("installments")}
+              {...register("installments", { valueAsNumber: true })}
             />
             <ErrorMessage>{errors.installments?.message}</ErrorMessage>
           </div>
           <div>
-            <label>Informe o percentual de MDR *</label>
-            <input
+            <label htmlFor="mdr">Informe o percentual de MDR *</label>
+            <Input
+              id="mdr"
               type="number"
               placeholder="Percentual MDR"
-              {...register("mdr")}
+              {...register("mdr", { valueAsNumber: true })}
             />
             <ErrorMessage>{errors.mdr?.message}</ErrorMessage>
           </div>

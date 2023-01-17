@@ -23,6 +23,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+    
+    
   }
   ul,ol,li{
     list-style: none;

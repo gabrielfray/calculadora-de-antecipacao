@@ -17,9 +17,8 @@ const CalculatorProvider = ({ children }: IProps) => {
     await api
       .post("", data)
       .then((res) => {
-        console.log(res.data);
         setSimulate(res.data);
-        toast.success("Funcionou pai!", {
+        toast.success("Sucesso!", {
           toastId: 1,
         });
       })
