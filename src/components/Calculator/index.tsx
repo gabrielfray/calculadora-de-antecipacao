@@ -1,10 +1,10 @@
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import Anticipation from "../Anticipation";
 import { ICalculatorData } from "../../interfaces";
-import { formSimulateSchema } from "../../validators";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { formSimulateSchema } from "../../validators";
 import { CalculatorContent, ErrorMessage, Input } from "./styles";
-import { useContext } from "react";
 import { CalculatorContext } from "../../context/CalculatorContext";
 
 const Calculator = () => {
@@ -21,10 +21,10 @@ const Calculator = () => {
 
   return (
     <CalculatorContent>
-      <div className="ContentForm">
+      <div className="contentForm">
         <h2>Simule sua Antecipação</h2>
         <form
-          className="CalculatorForm"
+          className="calculatorForm"
           onChange={handleSubmit(onSubmitSimulate)}
         >
           <div>

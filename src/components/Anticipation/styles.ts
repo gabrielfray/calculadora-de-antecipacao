@@ -17,24 +17,25 @@ background-color: #F5F7FA;
         width: 40%;
 
     }
-
-    .YouReceive {
-        border-bottom: 1px solid #5D9CEC;
-        padding-right: 1.25rem;
+    .contentReceive{
+        width: 161px;
+        border-bottom: 1px solid var(--color-blue);
+    }
+    .receive {
         font-weight: 700;
-        color: #3D75BB;
+        color: var(--color-blue-1);
     }
 
     ul {
         display: flex;
         flex-direction: column;
-        gap: .9375rem;
+        gap: 1.5rem;
         font-style: italic;
-        color: #5D9CEC;
+        color: var(--color-blue);
 
         span {
             font-weight: 700;
-            color: #5D9CEC;
+            color: var(--color-blue);
             font-style: italic;
         }
     }
