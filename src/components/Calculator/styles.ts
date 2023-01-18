@@ -10,37 +10,37 @@ gap: 1.1rem;
 width: 100vw;
 height: 100vh;
 
-background-color: #ffff;
+background-color: var(--color-gray-0);
 border: .125rem solid #D1DCE3;
 box-shadow: .3125rem .375rem .25rem -0.0625rem rgba(153,141,153,1);
-border-radius: .3125rem;
+border-radius: .375rem;
 
     @media (min-width: 48rem) {
         flex-direction: row;
         width: 38rem;
-        height: 24.375rem;
+        height: 27rem;
     }
 
-    .ContentForm{
+    .contentForm{
         display: flex;
         flex-direction: column;
         align-items: center;
 
+        h2 {
+            color: var(--color-gray-1);
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 2.625rem 0rem 1.25rem 0rem;
+        }
 
-        @media (min-width: 48rem) {
+         @media (min-width: 48rem) {
             width: 60%;
             margin-bottom: 2.75rem;
         }
     }
 
-    h2 {
-        color: var(--color-gray-1);
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: 2.625rem 0rem 1.25rem 0rem;
-
-    }
-    .CalculatorForm {
+    
+    .calculatorForm {
         display: flex;
         flex-direction: column;
         gap: 1.625rem;
@@ -49,6 +49,9 @@ border-radius: .3125rem;
             display: flex;
             flex-direction: column;
             gap: .375rem;
+            position: relative;
+            
+            height: 89px;            
         }
 
         label {
@@ -77,10 +80,14 @@ outline: none;
         -webkit-appearance: none;
     }
 `
-export const ErrorMessage = styled.div`
-color: #CECECE;
-font-size: .8rem;
+export const ErrorMessage = styled.span`
 display: flex;
 align-self: flex-start;
 padding-left: .25rem;
+position: absolute;
+bottom: 0px;
+
+font-weight: 600;
+font-size: .8rem;
+color: #DC3535;
 `;

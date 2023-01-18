@@ -4,8 +4,10 @@ import { ContentReceive } from "./styles";
 const Anticipation = ({ simulate }: any) => {
   return (
     <ContentReceive>
-      <span className="YouReceive">VOCÊ RECEBERÁ:</span>
       <ul>
+        <div className="contentReceive">
+          <span className="receive">VOCÊ RECEBERÁ:</span>
+        </div>
         <li>
           Amanhã:{" "}
           <span>
