@@ -50,11 +50,12 @@ Visão Geral das tecnologias usadas nesse projeto.
 
 - <a name="Gabriel-fray" href="https://www.linkedin.com/in/gabrielfray/" target="_blank">Gabriel Fray</a>
 
-[Voltar para o topo](#tabela-de-conteúdos)
-
 <a name="terms"></a>
 
 ## 6. Termos de uso
 
 Este é um projeto Open Source para fins educacionais e não comerciais, **Tipo de licença** - <a name="mit" href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>
+
+
+[Voltar para o topo](#tabela-de-conteúdos)
 
