@@ -17,6 +17,12 @@
 
 - Hoje nossos clientes precisam saber quanto custa antecipar uma transação, e para isso, foi desenvolvido uma calculadora de antecipação para que os mesmos consigam saber quais valores receberão caso optem por antecipar o recebimento.
 
+- São apenas três campos a serem preenchidos, informar primeiro o valor da venda, logo em seguida as parcelas e opcionalmente o percentual MDR, que se não for preenchido por padrão é 0.
+
+- Com isso o cliente já tem o resultado dos valores e nos dias 0, 15, 30 e 90.
+
+
+
 <a name="links"></a>
 
 ## 2. Links relevantes
