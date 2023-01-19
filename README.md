@@ -6,6 +6,7 @@
 1. [Sobre](#sobre)
 2. [Links Relevantes](#links)
 3. [Techs](#techs)
+4. [Instalação](#install)
 5. [Desenvolvedor](#dev)
 6. [Termos de uso](#terms)
 
@@ -30,6 +31,8 @@
 - <a name="deploy-da-aplicação" href ="https://antecipation-calculator-wine.vercel.app" target="_blank">Link da aplicação</a>
 - <a name="api-usada-na-aplicação" href ="https://frontend-challenge-7bu3nxh76a-uc.a.run.app">Link da API usada</a>
 
+<a align="left" name="techs"></a>
+
 ## 3. Techs
 
 Visão Geral das tecnologias usadas nesse projeto.
@@ -49,6 +52,36 @@ Visão Geral das tecnologias usadas nesse projeto.
 <a align="left" name="techs"></a>
 
 <a name="install"></a>
+
+## 4. Instalação e uso
+
+### 4.1 Requisitos:
+- ReactJs a partir da versão 17.0.2
+- Gerenciador de pacotes yarn ou npm
+
+### 4.2 Instalação
+4.2.1 - Após o clone no repositório para adicionar todas as dependências do package json execute o comando: 
+`yarn install` 
+
+```
+4.2.2 - Para rodar projeto utilize o comando `yarn dev` no terminal, caso de tudo certo receberá uma mensagem parecida com essa:
+
+```
+
+```
+  VITE v4.0.4  ready in 3720 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h to show help
+  
+```
+
+```
+
+4.2.3 - Após isso basta clicar no link do localhost disponível para ter acesso a representação visual de como está ficando o site.
+
+```
 
 <a name="dev"></a>
 
