@@ -3,19 +3,19 @@ import { useForm } from "react-hook-form";
 import Anticipation from "../Anticipation";
 import { ICalculatorData } from "../../interfaces";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { formSimulateSchema } from "../../validators";
+import { formCalculatorSchema } from "../../validators";
 import { CalculatorContent, ErrorMessage, Input } from "./styles";
 import { CalculatorContext } from "../../context/CalculatorContext";
 
 const Calculator = () => {
-  const { onSubmitSimulate, simulate } = useContext(CalculatorContext);
+  const { onSubmitCalculator, receveidValues } = useContext(CalculatorContext);
 
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<ICalculatorData>({
-    resolver: yupResolver(formSimulateSchema),
+    resolver: yupResolver(formCalculatorSchema),
     shouldFocusError: false,
   });
 
@@ -25,7 +25,7 @@ const Calculator = () => {
         <h2>Simule sua Antecipação</h2>
         <form
           className="calculatorForm"
-          onChange={handleSubmit(onSubmitSimulate)}
+          onChange={handleSubmit(onSubmitCalculator)}
         >
           <div>
             <label htmlFor="amount">Informe o valor da venda *</label>
@@ -59,7 +59,7 @@ const Calculator = () => {
           </div>
         </form>
       </div>
-      <Anticipation simulate={simulate} />
+      <Anticipation receveidValues={receveidValues} />
     </CalculatorContent>
   );
 };

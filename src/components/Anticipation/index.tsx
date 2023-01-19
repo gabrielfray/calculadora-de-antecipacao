@@ -1,7 +1,6 @@
-import { IDaysReceive } from "../../interfaces";
 import { ContentReceive } from "./styles";
 
-const Anticipation = ({ simulate }: any) => {
+const Anticipation = ({ receveidValues }: any) => {
   return (
     <ContentReceive>
       <ul>
@@ -11,25 +10,29 @@ const Anticipation = ({ simulate }: any) => {
         <li>
           Amanhã:{" "}
           <span>
-            R$ {simulate ? (simulate["1"] / 100).toFixed(2) : "00,00"}
+            R${" "}
+            {receveidValues ? (receveidValues["1"] / 100).toFixed(2) : "00,00"}
           </span>
         </li>
         <li>
           Em 15 dias:{" "}
           <span>
-            R$ {simulate ? (simulate["15"] / 100).toFixed(2) : "00,00"}
+            R${" "}
+            {receveidValues ? (receveidValues["15"] / 100).toFixed(2) : "00,00"}
           </span>
         </li>
         <li>
           Em 30 dias:{" "}
           <span>
-            R$ {simulate ? (simulate["30"] / 100).toFixed(2) : "00,00"}
+            R${" "}
+            {receveidValues ? (receveidValues["30"] / 100).toFixed(2) : "00,00"}
           </span>
         </li>
         <li>
           Em 90 dias:{" "}
           <span>
-            R$ {simulate ? (simulate["90"] / 100).toFixed(2) : "00,00"}
+            R${" "}
+            {receveidValues ? (receveidValues["90"] / 100).toFixed(2) : "00,00"}
           </span>
         </li>
       </ul>
