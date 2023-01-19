@@ -8,7 +8,7 @@ import { CalculatorContent, ErrorMessage, Input } from "./styles";
 import { CalculatorContext } from "../../context/CalculatorContext";
 
 const Calculator = () => {
-  const { onSubmitCalculator, receveidValues } = useContext(CalculatorContext);
+  const { onSubmitCalculator } = useContext(CalculatorContext);
 
   const {
     register,
@@ -59,7 +59,7 @@ const Calculator = () => {
           </div>
         </form>
       </div>
-      <Anticipation receveidValues={receveidValues} />
+      <Anticipation />
     </CalculatorContent>
   );
 };

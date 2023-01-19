@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { CalculatorContext } from "../../context/CalculatorContext";
 import { ContentReceive } from "./styles";
 
-const Anticipation = ({ receveidValues }: any) => {
+const Anticipation = () => {
+  const { receveidValues } = useContext(CalculatorContext);
+
   return (
     <ContentReceive>
       <ul>
@@ -11,28 +15,34 @@ const Anticipation = ({ receveidValues }: any) => {
           Amanhã:{" "}
           <span>
             R${" "}
-            {receveidValues ? (receveidValues["1"] / 100).toFixed(2) : "00,00"}
+            {receveidValues ? (receveidValues["1"]! / 100).toFixed(2) : "00,00"}
           </span>
         </li>
         <li>
           Em 15 dias:{" "}
           <span>
             R${" "}
-            {receveidValues ? (receveidValues["15"] / 100).toFixed(2) : "00,00"}
+            {receveidValues
+              ? (receveidValues["15"]! / 100).toFixed(2)
+              : "00,00"}
           </span>
         </li>
         <li>
           Em 30 dias:{" "}
           <span>
             R${" "}
-            {receveidValues ? (receveidValues["30"] / 100).toFixed(2) : "00,00"}
+            {receveidValues
+              ? (receveidValues["30"]! / 100).toFixed(2)
+              : "00,00"}
           </span>
         </li>
         <li>
           Em 90 dias:{" "}
           <span>
             R${" "}
-            {receveidValues ? (receveidValues["90"] / 100).toFixed(2) : "00,00"}
+            {receveidValues
+              ? (receveidValues["90"]! / 100).toFixed(2)
+              : "00,00"}
           </span>
         </li>
       </ul>
